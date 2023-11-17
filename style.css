@@ -64,7 +64,7 @@
     flex-direction: column; /*Inverte o posicionamento do flex e dos eixos*/
     justify-content: center; /*Seria centralizar no eixo X, mas por causa do flex direction, é eixo Y*/
     padding: 0 4em;
-    background-image: url("./Assets/imagem_home2.jpg");
+    background-image: url("./Assets/Imagens/imagem_home2.jpg");
     background-position: center;
     background-size: cover;
 }
