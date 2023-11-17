@@ -1,0 +1,200 @@
+/* Paleta de cores: https://coolors.co/palette/0a1128-001f54-034078-1282a2-fefcfb */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', 'sans-sefir';
+    scroll-behavior:smooth;
+}
+
+:root {
+    --azul-preto: #0A1128;
+    --azul-escuro: #001F54;
+    --azul-claro: #034078;
+    --azul-bebe: #1282A2;
+    --branco: #FEFCFB;
+}
+
+.titulo {
+    font-size: 3em;
+    color: var(--azul-bebe);
+}
+
+.subtitulo {
+    font-size: 2em;
+}
+
+#link-home {
+    font-size: 3em;
+    color: var(--azul-bebe);
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    bottom: 20px;
+
+    background-color: var(--branco);
+    border-radius: 50%;
+}
+
+.header {
+    width: 100vw; /*100% da largura (w) do tamanho da tela (v = viewport) */
+    background-color: var(--azul-preto); /*Cor de fundo da header*/
+    height: 3em; /*Unidade de medida responsiva, baseada no tamanho da tela*/
+    position: fixed;
+}
+
+.header a {
+    color: var(--branco); /*Cor da letra*/
+    padding: 0 1em; /*Não cria margem da letra pra cima ou para baixo, apenas nas laterais*/
+}
+
+.header-menu {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /*Inverte o posicionamento do flex e dos eixos*/
+    justify-content: center; /*Seria centralizar no eixo X, mas por causa do flex direction, é eixo Y*/
+    padding: 0 4em;
+    background-image: url("./Assets/Imagens/imagem_home2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#home h2 {
+    color: var(--branco);
+}
+
+#sobre {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4em;
+    color: var(--azul-preto);
+}
+
+#contatos {
+    width: 100vw;
+    height: 50vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0 4em;
+    background-color: var(--azul-preto);
+    color: var(--branco);
+}
+
+#contatos a {
+    color: var(--branco);
+}
+
+#contatos ul {
+    list-style: none;
+    font-size: 1.5em;
+}
+
+#contatos i {
+    padding: .5em;
+}
+
+#formacoes {
+    width: 100vw;
+    height: 50vh;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    
+    padding: 4em;
+    color: var(--azul-preto);
+}
+
+#formacoes a {
+    color: var(--branco);
+}
+
+#formacoes ol {
+    list-style: none;
+    font-size: 1.5em;
+    display: flex;
+    padding-top: 2em;
+}
+
+#formacoes li {
+    padding-right: 2em;
+}
+
+#experiencias {
+    width: 100vw;
+    height: 50vh;
+    
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 4em;
+    background-color: var(--azul-preto);
+    color: var(--branco);
+}
+
+#experiencias a {
+    color: var(--branco);
+}
+
+#experiencias ol {
+    list-style: none;
+    font-size: 1.5em;
+    display: flex;
+    padding-top: 2em;
+    
+}
+
+#experiencias li {
+    padding-right: 2em;
+    font-size: .7em;
+}
+
+.footer {
+    width: 100vw;
+    background-color: var(--azul-claro);
+    display: flex;
+    padding: 1em 4em;
+    justify-content: space-between;
+    color: var(--branco);
+}
+
+.container {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  /* justify-content: space-around; */
+
+}
+
+
+
+.item {
+
+  width: 100px;
+
+  height: 50px;
+
+  background-color: #3498db;
+
+  margin: 10px;
+
+}
